@@ -16,7 +16,7 @@ label{
     margin-top: 15px;
     font-size: 25px;
 }
-.nombre-caballos{
+#nombre-caballos{
     display: flex;
     align-items: center;
     flex-direction: column;

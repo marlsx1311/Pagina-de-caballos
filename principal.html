@@ -10,30 +10,30 @@
 <body>
     <h1>CARRERA DE CABALLOS</h1>
     <section>
-        <div class="nombre-caballos">
+        <div id="nombre-caballos">
             <h2>Selecciona tu caballo</h2>
 
             <label for="caballo-uno">1</label>
-            <input type="text" name="caballo-uno" value="ingrese nombre">
+            <input type="text"  value="caballo Uno" id="primero">
 
             <label for="caballo-dos">2</label>
-            <input type="text" name="caballo-dos"  value="ingrese nombre">
+            <input type="text" value="caballo Dos" id="segundo">
 
             <label for="caballo-tres">3</label>
-            <input type="text" name="caballo-tres"  value="ingrese nombre">
+            <input type="text" value="caballo Tres" id="tercero">
 
             <label for="caballo-cuatro">4</label>
-            <input type="text" name="caballo-cuatro"  value="ingrese nombre">
+            <input type="text" value="caballo Cuatro" id="cuarto">
 
             <label for="caballo-cinco">5</label>
-            <input type="text" name="caballo-cinco"  value="ingrese nombre">
+            <input type="text" value="caballo Cinco" id="quinto">
 
             <label for="caballo-seis">6</label>
-            <input type="text" name="caballo-seis"  value="ingrese nombre">
+            <input type="text" value="caballo Seis" id="sexto">
 
-            <button id="boton-seleccion">seleccionar</button>
+            <button id="boton-seleccion" onclick="seleccionar()">seleccionar</button>
         </div>
-        <div>
+        <div id="carrera-caballos">
             <p id="caballo-ganador"></p>
             <button>Partida</button>
             <button id="boton-reiniciar">reiniciar</button>
