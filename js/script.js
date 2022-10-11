@@ -14,6 +14,12 @@ let caballoCuatro = 0
 let caballoCinco= 0
 let caballoSeis= 0
 let partidaContador = 0
+let texUno
+let texDos
+let texTres
+let texCuatro
+let texCinco
+let texSeis
 
 class Jinetes{
     constructor(nombre, foto, numero){
@@ -52,9 +58,24 @@ function cargarPagina(){
 
 }
 function seleccionar(){
+    let primeroUno = document.getElementById("primero").value
+    let segundoDos = document.getElementById("segundo").value
+    let terceroTres = document.getElementById("tercero").value
+    let cuartoCuatro = document.getElementById("cuarto").value
+    let quintoCinco = document.getElementById("quinto").value
+    let sextoSeis = document.getElementById("sexto").value
+
     carreraCaballo.style.display ="block"
     nombreCaballo.style.display = "none"
+    seleccionGinete.innerHTML = "J1: "+ primeroUno+" J2: "+ segundoDos+" J3: "+ terceroTres+"J4: "+ cuartoCuatro+"J5: "+ quintoCinco+" J6: "+ sextoSeis
     
+    texUno = primeroUno
+    texDos = segundoDos
+    texTres = terceroTres
+    texCuatro = cuartoCuatro
+    texCinco = quintoCinco
+    texSeis = sextoSeis
+
 }
     
 
@@ -63,32 +84,27 @@ function aleatorio(min, max) {
 }
 
 function partida(){
-    let primeroUno = document.getElementById("primero").value
-    let segundoDos = document.getElementById("segundo").value
-    let terceroTres = document.getElementById("tercero").value
-    let cuartoCuatro = document.getElementById("cuarto").value
-    let quintoCinco = document.getElementById("quinto").value
-    let sextoSeis = document.getElementById("sexto").value
+    
     
     while(partidaContador == 0){
         if (caballoUno == 10){
             partidaContador++
-            caballoGanador.innerHTML = "El GANADOR ES EL CABALLO 1 CON EL JINETE: " +primeroUno
+            caballoGanador.innerHTML = "El GANADOR ES EL CABALLO 1 CON EL JINETE: " +texUno
         }else if (caballoDos == 10){
             partidaContador++
-            caballoGanador.innerHTML = "El GANADOR ES EL CABALLO 2 CON EL JINETE: " +segundoDos
+            caballoGanador.innerHTML = "El GANADOR ES EL CABALLO 2 CON EL JINETE: " +texDos
         } else if (caballoTres == 10){
             partidaContador++
-            caballoGanador.innerHTML = "El GANADOR ES EL CABALLO 3 CON EL JINETE: " +terceroTres
+            caballoGanador.innerHTML = "El GANADOR ES EL CABALLO 3 CON EL JINETE: " +texTres
         }else if (caballoCuatro == 10){
             partidaContador++
-            caballoGanador.innerHTML = "El GANADOR ES EL CABALLO 4 CON EL JINETE: " +cuartoCuatro
+            caballoGanador.innerHTML = "El GANADOR ES EL CABALLO 4 CON EL JINETE: " +texCuatro
         }else if (caballoCinco == 10){
             partidaContador++
-            caballoGanador.innerHTML = "El GANADOR ES EL CABALLO 5 CON EL JINETE: " +quintoCinco
+            caballoGanador.innerHTML = "El GANADOR ES EL CABALLO 5 CON EL JINETE: " +texCinco
         }else if (caballoSeis == 10){
             partidaContador++
-            caballoGanador.innerHTML = "El GANADOR ES EL CABALLO 6 CON EL JINETE: " +sextoSeis
+            caballoGanador.innerHTML = "El GANADOR ES EL CABALLO 6 CON EL JINETE: " +texSeis
         }else{
             contador()
         }
