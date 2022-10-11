@@ -8,38 +8,63 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>CARRERA DE CABALLOS</h1>
-    <section>
-        <div id="nombre-caballos">
-            <h2>Selecciona tu caballo</h2>
+    
+    <section id="nombre-caballos">
+        <h1 class="titulo">CARRERA DE CABALLOS</h1>
 
-            <label for="caballo-uno">1</label>
-            <input type="text"  value="caballo Uno" id="primero">
+        <h2 class="subtitulo">Selecciona tu caballo</h2>
 
-            <label for="caballo-dos">2</label>
-            <input type="text" value="caballo Dos" id="segundo">
+            <div class="tarjetas">
+                <label class="tarjeta-de-caballo" for="caballo-uno">
+                    <p>1</p>
+                    <img src="./img/caballo1.png" alt="caballo 1">
+                </label>
+                <input type="text" name="caballo-uno" value="caballo Uno" id="primero">
 
-            <label for="caballo-tres">3</label>
-            <input type="text" value="caballo Tres" id="tercero">
+                <label class="tarjeta-de-caballo" for="caballo-dos">
+                    <p>2</p>
+                    <img src="./img/caballo2.png" alt="caballo 2">
+                </label>
+                <input type="text" name="caballo-dos" value="caballo Dos" id="segundo">
 
-            <label for="caballo-cuatro">4</label>
-            <input type="text" value="caballo Cuatro" id="cuarto">
+                <label class="tarjeta-de-caballo" for="caballo-tres">
+                    <p>3</p>
+                    <img src="./img/caballo3.png" alt="caballo 3">
+                </label>
+                <input type="text" name="caballo-tres" value="caballo Tres" id="tercero">
 
-            <label for="caballo-cinco">5</label>
-            <input type="text" value="caballo Cinco" id="quinto">
+                <label class="tarjeta-de-caballo" for="caballo-cuatro">
+                    <p>4</p>
+                    <img src="./img/caballo4.png" alt="caballo 4">
+                </label>
+                <input type="text" name="caballo-cuatro" value="caballo Cuatro" id="cuarto">
 
-            <label for="caballo-seis">6</label>
-            <input type="text" value="caballo Seis" id="sexto">
+                <label class="tarjeta-de-caballo" for="caballo-cinco">
+                    <p>5</p>
+                    <img src="./img/caballo5.png" alt="caballo 5">
+                </label>
+                <input type="text" name="caballo-cinco" value="caballo Cinco" id="quinto">
 
-            <button id="boton-seleccion">seleccionar</button>
-        </div>
-        <div id="carrera-caballos">
-            <h2>Buena Suerte</h2>
-            <p id="seleccion-jinete"></p>
-            <p id="caballo-ganador"></p>
-            <button id="boton-partida">Partida</button>
-            <button id="boton-reiniciar">reiniciar</button>
-        </div>
+                <label class="tarjeta-de-caballo" for="caballo-seis">
+                    <p>6</p>
+                    <img src="./img/caballo6.png" alt="caballo 6">
+                </label>
+                <input type="text" name="caballo-seis" value="caballo Seis" id="sexto">
+            </div>
+            
+
+            <button id="boton-seleccion">SELECCIONAR</button>
+        </section>
+        <section>
+            <div id="carrera-caballos">
+                <h2>Buena Suerte</h2>
+                <p id="seleccion-jinete"></p>
+                <p id="caballo-ganador"></p>
+                <button id="boton-partida">Partida</button>
+                <button id="boton-reiniciar">reiniciar</button>
+            </div>
+        </section>   
+        
     </section>
     <script src="./js/script.js"></script>
 </body>

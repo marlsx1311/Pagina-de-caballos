@@ -1,26 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
 body{
-    background-color: #FF884B;
+    background-color: #f8c245;
     font-family: 'Peralta', cursive;
-}
-h1{
-    display: flex;
-    justify-content: center;
-    color: #562B08;
-    font-size: 50px;
-    margin-bottom: 15px;
-}
-label{
-    background-color: aqua;
-    border-radius: 15px;
-    margin-top: 15px;
-    font-size: 25px;
 }
 #nombre-caballos{
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: #3e1e04;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.subtitulo{
+    color: #030201;
+    font-size: 40px;
+
+}
+.tarjetas{
+    display: flex;
+    gap: 10px;
+    width: 1000px;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.tarjeta-de-caballo{
+    background-color: #FF4949;
+    width: 125px;
+    height: 130px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.tarjeta-de-caballo img{
+    width: 134px;
+    margin-block: -40px;
+}
+
 #boton-seleccion{
     margin-top: 20px;
     font-family: 'Peralta', cursive;

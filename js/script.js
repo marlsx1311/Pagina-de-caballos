@@ -14,7 +14,11 @@ let caballoCinco= 0
 let caballoSeis= 0
 let partidaContador = 0
 
-
+class Jinetes{
+    constructor(nombre, foto, numero){
+        
+    }
+}
 
 
 function cargarPagina(){
