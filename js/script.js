@@ -6,6 +6,7 @@ const nombreCaballo = document.getElementById("nombre-caballos")
 const botonPartida = document.getElementById("boton-partida")
 const seleccionGinete = document.getElementById("seleccion-jinete")
 
+let arregloCaballos = []
 let caballoUno = 0
 let caballoDos= 0
 let caballoTres = 0
@@ -16,10 +17,32 @@ let partidaContador = 0
 
 class Jinetes{
     constructor(nombre, foto, numero){
-        
+        this.nombre = nombre
+        this.foto = foto
+        this.numero = numero
     }
 }
+let cabUno = new Jinetes("Caballo Uno", "./img/caballo1.png", 1)
+console.log(cabUno.nombre)
 
+let cabDos = new Jinetes("Caballo Dos", "./img/caballo2.png", 2)
+console.log(cabUno.nombre)
+
+let cabTres = new Jinetes("Caballo Tres", "./img/caballo3.png", 3)
+console.log(cabUno.nombre)
+
+let cabCuatro = new Jinetes("Caballo Cuatro", "./img/caballo4.png", 4)
+console.log(cabUno.nombre)
+
+let cabCinco = new Jinetes("Caballo Cinco", "./img/caballo5.png", 5)
+console.log(cabUno.nombre)
+
+let cabSeis = new Jinetes("Caballo Seis", "./img/caballo6.png", 6)
+console.log(cabUno.nombre)
+
+arregloCaballos.push(cabUno,cabDos,cabTres,cabCuatro,cabCinco,cabSeis)
+
+console.log(arregloCaballos)
 
 function cargarPagina(){
     carreraCaballo.style.display = "none"
@@ -31,9 +54,10 @@ function cargarPagina(){
 function seleccionar(){
     carreraCaballo.style.display ="block"
     nombreCaballo.style.display = "none"
-    seleccionGinete.innerHTML = "J1: "+ primeroUno+" J2: "+ segundoDos+" J3: "+ terceroTres+"J4: "+ cuartoCuatro+"J5: "+ quintoCinco+" J6: "+ sextoSeis
     
 }
+    
+
 function aleatorio(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -85,7 +109,7 @@ function contador(){
     }else if(contadorAleatorio == 6){
         caballoSeis++
     }
-    console.log(contadorAleatorio)
+    //console.log(contadorAleatorio)
 }
 function reiniciar(){
     window.location.reload()
